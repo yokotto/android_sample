@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/fragment_item_confirmButton"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/confirm"
+        android:background="@drawable/border_4dp_green"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/fragment_item_cancelButton"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:text="@string/cancel"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/border_4dp_orange"
+        app:layout_constraintTop_toTopOf="@id/fragment_item_confirmButton"
+        app:layout_constraintStart_toEndOf="@id/fragment_item_confirmButton" />
+
+    <Button
+        android:id="@+id/fragment_item_originalButton"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:text="@string/original"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/border_4dp_lite_blue"
+        app:layout_constraintTop_toTopOf="@id/fragment_item_cancelButton"
+        app:layout_constraintStart_toEndOf="@id/fragment_item_cancelButton" />
+
+    <View
+        android:id="@+id/fragment_item_view1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        app:layout_constraintStart_toStartOf="@id/fragment_item_confirmButton"
+        app:layout_constraintTop_toBottomOf="@id/fragment_item_confirmButton" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/fragment_item_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/fragment_item_view1"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">Expenses</string>
+    <string name="menu">メニュ</string>
+    <string name="expenses">家計簿</string>
+    <string name="graph">グラフ</string>
+    <string name="settings">設定</string>
+    <string name="spending">出費</string>
+    <string name="payment">収入</string>
+    <string name="item">項目</string>
+    <string name="regular">定期</string>
+    <string name="bar2">--</string>
+    <string name="amount">金額</string>
+    <string name="add">追加</string>
+    <string name="add_item">項目追加</string>
+    <string name="custom">改造</string>
+    <string name="edit">編集</string>
+    <string name="confirm">確定</string>
+    <string name="cancel">取消</string>
+    <string name="use">用途</string>
+    <string name="remove">削除</string>
+    <string name="original">独自</string>
+    <string name="proliferation">増殖</string>
+    <string name="reset">リセット</string>
+    <string name="picture">写真</string>
+    <string name="image">画像</string>
+    <string name="back">戻る</string>
+    <string name="exit">終了</string>
+    <string name="main">メイン</string>
+    <string name="first">1th</string>
+    <string name="second">2th</string>
+    <string name="third">3th</string>
+    <string name="fourth">4th</string>
+    <string name="student">生徒</string>
+    <string name="communication">通信</string>
+    <string name="animation">アニメーション</string>
+    <string name="update">更新</string>
+    <string name="insert">挿入</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_thied">ThiedActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_fouthctivity">Fouthctivity</string>
+    <string name="title_activity_second">SecondActivity</string>
+</resources>

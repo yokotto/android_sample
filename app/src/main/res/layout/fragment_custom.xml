@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/fragment_item_confirmButton"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/confirm"
+        android:background="@drawable/border_4dp_lime_200"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <Button
+        android:id="@+id/fragment_item_cancelButton"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:text="@string/cancel"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/border_4dp_orange"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <View
+        android:id="@+id/fragment_item_view1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="35dp"
+        android:background="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/fragment_item_amount"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="24sp"
+        android:hint="@string/item"
+        android:autofillHints="@string/use"
+        android:textColor="@color/black"
+        android:background="@drawable/border_1dp_white"
+        app:layout_constraintTop_toBottomOf="@id/fragment_item_view1"
+        app:layout_constraintStart_toStartOf="parent"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/fragment_add_spending_amountText"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:textSize="24sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:hint="@string/amount"
+        android:autofillHints="@string/amount"
+        android:textColor="@color/black"
+        android:background="@drawable/border_1dp_white"
+        app:layout_constraintTop_toBottomOf="@id/fragment_item_view1"
+        app:layout_constraintStart_toEndOf="@id/fragment_item_amount"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/fragment_add_spending_addButton"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:textSize="16sp"
+        android:text="@string/add"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintTop_toBottomOf="@id/fragment_item_view1"
+        app:layout_constraintStart_toEndOf="@id/fragment_add_spending_amountText"
+        android:inputType="text"
+        tools:ignore="LabelFor" />
+
+    <View
+        android:id="@+id/fragment_add_spending_view2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/fragment_item_amount"
+        app:layout_constraintStart_toStartOf="@id/fragment_item_amount" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/fragment_item_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/fragment_add_spending_view2"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

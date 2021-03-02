@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+<LinearLayout
+    android:id="@+id/list_student_layoutAll"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:weightSum="1">
+
+    <TextView
+        android:id="@+id/list_student_number"
+        android:layout_width="24dp"
+        android:layout_height="match_parent"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:gravity="start|center"
+        android:layout_weight="0.1"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/black"/>
+
+        <ImageView
+            android:id="@+id/list_student_image"
+            android:layout_width="24dp"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:layout_weight="0.1"
+            android:contentDescription="@string/picture" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/black"/>
+
+        <TextView
+            android:id="@+id/list_student_firstName"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="start|center"
+            android:layout_weight="0.4"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/black"/>
+
+        <TextView
+            android:id="@+id/list_student_lastName"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="start|center"
+            android:layout_weight="0.4"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/black"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"/>
+
+</LinearLayout>
+</layout>

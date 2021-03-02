@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="color"
+            type="int" />
+        <variable
+            name="image"
+            type="int" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/fragment_student_detail_layoutAll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@{color}">
+
+        <ImageView
+            android:id="@+id/fragment_student_detail_studentImage"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/rabbits"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/fragment_student_detail_grade"
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:text="学年"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@id/fragment_student_detail_studentImage"
+            app:layout_constraintEnd_toStartOf="@id/fragment_student_detail_studentFirstName"
+            app:layout_constraintTop_toTopOf="@id/fragment_student_detail_studentImage"/>
+
+        <TextView
+            android:id="@+id/fragment_student_detail_studentNumber"
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:text="生徒番号"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@id/fragment_student_detail_studentImage"
+            app:layout_constraintEnd_toStartOf="@id/fragment_student_detail_studentFirstName"
+            app:layout_constraintTop_toBottomOf="@id/fragment_student_detail_grade"/>
+
+        <TextView
+            android:id="@+id/fragment_student_detail_studentFirstName"
+            android:layout_width="108dp"
+            android:layout_height="48dp"
+            android:text="性"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:gravity="start|bottom"
+            app:layout_constraintEnd_toStartOf="@id/fragment_student_detail_studentLastName"
+            app:layout_constraintTop_toTopOf="@id/fragment_student_detail_studentLastName"/>
+
+        <TextView
+            android:id="@+id/fragment_student_detail_studentLastName"
+            android:layout_width="108dp"
+            android:layout_height="48dp"
+            android:text="名"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:gravity="start|bottom"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="48dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black"/>
+
+            <!-- 2行目 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1.2">
+
+            <TextView
+                android:id="@+id/fragment_student_detail_age"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:gravity="start|center"
+                android:layout_weight="0.4" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/black"/>
+
+            <TextView
+                android:id="@+id/fragment_student_detail_gender"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:gravity="start|center"
+                android:layout_weight="0.4" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/black"/>
+
+            <TextView
+                android:id="@+id/fragment_student_detail_bloodType"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:gravity="start|center"
+                android:textColor="@color/black"
+                android:layout_weight="0.4" />
+
+        </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black"/>
+
+            <!-- 3行目 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1.0">
+
+                <TextView
+                    android:id="@+id/fragment_student_detail_birthday"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:gravity="start|center"
+                    android:textColor="@color/black"
+                    android:layout_weight="0.5" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/black"/>
+
+                <TextView
+                    android:id="@+id/fragment_student_detail_birthplace"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:gravity="start|center"
+                    android:textColor="@color/black"
+                    android:layout_weight="0.5" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black"/>
+
+            <!-- 4行目 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1.0">
+
+                <TextView
+                    android:id="@+id/fragment_student_detail_department"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:gravity="start|center"
+                    android:textColor="@color/black"
+                    android:layout_weight="0.5" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/black"/>
+
+                <TextView
+                    android:id="@+id/fragment_student_detail_club"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:gravity="start|center"
+                    android:textColor="@color/black"
+                    android:layout_weight="0.5" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black"/>
+
+            <!-- 5行目 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1.0">
+
+                <TextView
+                    android:id="@+id/fragment_student_detail_skill"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:gravity="start|center"
+                    android:textColor="@color/black"
+                    android:layout_weight="0.5" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/black"/>
+
+                <TextView
+                    android:id="@+id/fragment_student_detail_hobby"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:gravity="start|center"
+                    android:textColor="@color/black"
+                    android:layout_weight="0.5" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black"/>
+
+            <!-- 6行目 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1.0">
+
+                <TextView
+                    android:id="@+id/fragment_student_detail_favoriteFood"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:gravity="start|center"
+                    android:textColor="@color/black"
+                    android:layout_weight="0.5" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/black"/>
+
+                <TextView
+                    android:id="@+id/fragment_student_detail_none"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:gravity="start|center"
+                    android:textColor="@color/black"
+                    android:layout_weight="0.5" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black"/>
+
+            <TextView
+                android:id="@+id/fragment_student_detail_memo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:gravity="start|center"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

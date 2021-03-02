@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <scale
+        android:fromXScale="1"
+        android:toXScale="2"
+        android:fromYScale="1"
+        android:toYScale="2"
+        android:pivotX="@android:integer/config_shortAnimTime"
+        android:pivotY="@android:integer/config_shortAnimTime"
+        android:duration="300"
+        android:fromAlpha="1.0"
+        android:toAlpha="0.5"
+        android:repeatCount="1"
+        android:repeatMode="reverse"
+        android:fillAfter="true" />
+    <!--
+        <alpha
+    fadeout
+    val fadeout = AlphaAnimation(1.0f, 0.0f)
+    fadeout.willChangeBounds()
+    fadeout.isFillEnabled = true //fillAfter,Beforeの有効化
+    fadeout.fillAfter = true //アニメーション終了時にViewをそのまま残す
+    fadeout.duration = 300 //アニメーションの感覚
+    //val fadeIn = AlphaAnimation(0.0f,1.0f)
+    />
+
+    //回転 開始角度、終了角度、回転のX軸のタイプ、値、回転のy軸のタイプ、値
+    val rotate = RotateAnimation(0.0F, 360.0F,0,1.0F,0, 1.0F)//
+    rotate.repeatCount = 2 //繰り返し
+    rotate.repeatMode = 1 //単純に繰り返すのか 反復するのか
+    rotate.startOffset = 500 //開始時間の指定
+    rotate.zAdjustment = 1 //Zオーダーの指定
+
+    //XMLからの読み込み
+    val button_anime = AnimationUtils.loadAnimation(MyApplication.context,R.anim.btn_on_click)
+    //拡大縮小 xの初期値、終了値、yの初期値、終了値、拡大のX軸のタイプ、値、拡大のy軸のタイプ、値
+    val scale = ScaleAnimation(1.0F,2.0F,1.0F,2.0F,1,0F,1,0F)
+    //移動 移動元のX座標のタイプ、値、移動先のX座標のタイプ、値、同様にY
+    val translate = TranslateAnimation(1,1.0F,1,2.0F,1,1.0F,1,2.0f)
+
+    //組み合わせ
+    val set = AnimationSet(true)
+    set.addAnimation(fadeout)
+    set.addAnimation(rotate)
+    set.duration=500
+    -->
+
+</set>
