@@ -13,10 +13,10 @@ class FourthActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_fourthctivity)
 
-        val mainIntent = Intent(MyApplication.context,MainActivity::class.java)
-        val secondIntent = Intent(MyApplication.context,SecondActivity::class.java)
-        val thirdIntent = Intent(MyApplication.context,ThirdActivity::class.java)
-        val fourthIntent = Intent(MyApplication.context,FourthActivity::class.java)
+        val mainIntent = Intent(MyApplication.context, MainActivity::class.java)
+        val secondIntent = Intent(MyApplication.context, SecondActivity::class.java)
+        val thirdIntent = Intent(MyApplication.context, ThirdActivity::class.java)
+        val fourthIntent = Intent(MyApplication.context, FourthActivity::class.java)
         //intent.putExtra(EXTRA_MESSAGE,data)
 
         val navigation = findViewById<BottomNavigationView>(R.id.fourth_bottom_nav)
@@ -44,5 +44,7 @@ class FourthActivity : AppCompatActivity() {
             }
             false
         })
+        //初期表示
+        supportFragmentManager.beginTransaction().replace(R.id.activity_second_fragment_container, WebViewFragment()).commit()
     }
 }
